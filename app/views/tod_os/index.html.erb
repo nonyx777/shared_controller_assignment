@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Tod os</h1>
+
+<div id="tod_os">
+  <% @tod_os.each do |tod_o| %>
+    <%= render tod_o %>
+    <p>
+      <%= link_to "Show this tod o", tod_o %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New tod o", new_tod_o_path %>

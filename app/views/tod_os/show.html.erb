@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @tod_o %>
+
+<div>
+  <%= link_to "Edit this tod o", edit_tod_o_path(@tod_o) %> |
+  <%= link_to "Back to tod os", tod_os_path %>
+
+  <%= button_to "Destroy this tod o", @tod_o, method: :delete %>
+</div>

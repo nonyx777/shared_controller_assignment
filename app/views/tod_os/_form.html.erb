@@ -1,0 +1,17 @@
+<%= form_with(model: tod_o) do |form| %>
+  <% if tod_o.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(tod_o.errors.count, "error") %> prohibited this tod_o from being saved:</h2>
+
+      <ul>
+        <% tod_o.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
